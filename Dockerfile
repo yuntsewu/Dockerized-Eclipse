@@ -8,4 +8,4 @@ RUN apt-get install -y \
 	&& apt-get clean
 RUN adduser --disabled-password --quiet --gecos '' eclipse
 USER eclipse
-CMD [/bin/bash eclipse]
+CMD [/usr/bin/eclipse]
