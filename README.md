@@ -5,7 +5,7 @@ Author: Yun Tse Wu
 $ xhost +si:localuser:eclipse
 $ docker run -v ~/workspace/:/home/eclipse/workspace/ \
 -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix:ro \
--d eclipse/eclipse
-
+-d windsor106/dockerized-eclipse
 ##Contribution
 Clone the repository and contribute to Dockerfile
+
