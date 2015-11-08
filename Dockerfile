@@ -7,11 +7,6 @@ RUN apt-get install -y \
 	eclipse \
 	git \
 	&& apt-get clean
-
 RUN adduser --disabled-password --quiet --gecos '' eclipse
-#RUN chown -R root:eclipse $INSTALLATION_DIR/eclipse
-#RUN chmod -R 775 $INSTALLATION_DIR/eclipse
-
 USER eclipse
-
 CMD [eclipse]
